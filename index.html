@@ -254,7 +254,105 @@
             />
           </div>
         </div>
-        <div></div>
+        <div
+          style="
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+              'div1 div3'
+              'div2 div3';
+          "
+        >
+          <div
+            style="grid-area: div1"
+            class="bg-white rounded-lg w-full h-full px-[30px] py-[12px]"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">Inbox</h3>
+              <a href="#" class="text-blue-500 hover:underline text-sm"
+                >View details</a
+              >
+            </div>
+            <p class="text-gray-500 text-sm mt-2">Group: Support</p>
+            <ul class="mt-4 space-y-3">
+              <li class="flex justify-between text-sm">
+                <span>Waiting for order#12345</span>
+                <span class="text-gray-400">4:39</span>
+              </li>
+              <li class="flex justify-between text-sm">
+                <span>Customer support id#22234</span>
+                <span class="text-gray-400">11:07</span>
+              </li>
+            </ul>
+          </div>
+          <div
+            style="grid-area: div2"
+            class="bg-white rounded-lg w-full h-full p-[28px]"
+          >
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold text-lg">Recent Activity</h3>
+              <a href="#" class="text-blue-500 hover:underline text-sm"
+                >View all</a
+              >
+            </div>
+            <ul class="mt-4 space-y-4">
+              <li class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                  <span class="w-4 h-4 bg-blue-500 rounded-full"></span>
+                  <span>Confirm order update</span>
+                </div>
+                <span
+                  class="bg-yellow-200 text-yellow-700 text-xs px-2 py-1 rounded-lg"
+                  >URGENT</span
+                >
+              </li>
+              <li class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                  <span class="w-4 h-4 bg-red-500 rounded-full"></span>
+                  <span>Finish shipping update</span>
+                </div>
+                <span
+                  class="bg-yellow-200 text-yellow-700 text-xs px-2 py-1 rounded-lg"
+                  >URGENT</span
+                >
+              </li>
+              <li class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                  <span
+                    class="w-4 h-4 border border-gray-400 rounded-full"
+                  ></span>
+                  <span>Create new order</span>
+                </div>
+                <span
+                  class="bg-green-200 text-green-700 text-xs px-2 py-1 rounded-lg"
+                  >NEW</span
+                >
+              </li>
+              <li class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                  <span class="w-4 h-4 bg-blue-500 rounded-full"></span>
+                  <span>Update payment report</span>
+                </div>
+                <span
+                  class="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-lg"
+                  >DEFAULT</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            style="grid-area: div3"
+            class="bg-white rounded-lg w-full h-full p-[25px]"
+          >
+            <h3 class="font-bold text-lg">Today's trends</h3>
+            <p class="text-gray-500 text-sm">30 Sept 2021</p>
+            <div class="mt-6">
+              <img src="./assets/images/graphic_main.svg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
